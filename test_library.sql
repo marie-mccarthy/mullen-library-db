@@ -1,4 +1,4 @@
-create schema test_library;
+create schema if not exists test_library;
 
 -- List of users
 create table if not exists test_library.users (
@@ -25,7 +25,7 @@ create table if not exists test_library.books (
 -- ('The Great Gatsby', 'F. Scott Fitzgerald')
 
 -- Join table for users to favorite books
-create table if not exists favorite_books (
+create table if not exists test_library.favorite_books (
   favorite_book_id serial primary key,
   user_id int,
   book_id int
