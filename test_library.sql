@@ -1,9 +1,7 @@
 create schema test_library;
 
-set schema 'test_library';
-
 -- List of users
-create table if not exists users (
+create table if not exists test_library.users (
   user_id serial primary key,
   first_name varchar,
   last_name varchar,
@@ -11,18 +9,18 @@ create table if not exists users (
   username varchar
 );
 
--- insert into users (first_name, last_name, email, username) values
+-- insert into test_library.users (first_name, last_name, email, username) values
 -- ('Marie', 'McCarthy', 'mmcarthy@gwc.org', 'mmcarthy'),
 -- ('Maryn', 'Powell', 'mpowell@gwc.org', 'mpowell');
 
 -- List of available books
-create table if not exists books (
+create table if not exists test_library.books (
   book_id serial primary key,
   title varchar,
   author varchar
 );
 
--- insert into books (title, author) values
+-- insert into test_library.books (title, author) values
 -- ('Harry Potter and the Philosophers Stone', 'J.K. Rowling')
 -- ('The Great Gatsby', 'F. Scott Fitzgerald')
 
