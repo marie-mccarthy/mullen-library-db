@@ -81,7 +81,6 @@ create table if not exists test_library.favorite_books (
 
 -- What are Maryn's favorite books, now? Marie's?
 
-
 -- Finally, here's an example JOIN to combine the results we've seen.
 -- I'm going to leave it to you to figure out what all this syntax means :)
 -- Remember - Google is your very best friend.
